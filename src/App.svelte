@@ -54,6 +54,7 @@
       <li><strong>Versão em inglês</strong></li>
       <li><strong>Dark Mode</strong></li>
     </ol>
+    <div class="divider"></div>
     <h2>Como calculamos a nota final?</h2>
     <p>Calculamos as notas de 0 a 10, sendo 0 que não atendeu em absoluto o descritor e 10 com atendimento total e/ou superou a expectativa do avaliador. Veja a tabela abaixo:</p>
     <table>
@@ -128,6 +129,7 @@
       </tbody>
     </table>
     <p>Cada pessoa também recebeu uma avaliação da pessoa, em que estágio de desenvolvimento e maturidade está com seus códigos. Este esforço de oferecer uma avaliação mais subjetiva ajuda a confortar desenvolvedores(as) para entenderem que eles estão num processo constante de melhoramento.</p>
+    <div class="divider"></div>
     <h2>Avaliação Geral Global</h2>
     <p>Nosso intuito com a avaliação global é ofertar para quem fez este teste uma visão global do que precisa melhorar, como uma guia de estudos obtidos pela análise dos códigos. Estas estatísticas que conseguimos coletar tem valor muito especial para mentores do Pessoas de Tech em entenderem como estão as pessoas estão entregando seus desafios.</p>
     <p>Para sintetizar, listamos abaixo, em termos gerais, os principais pontos positivos e negativos das entregas dos desafios.</p>
@@ -152,13 +154,242 @@
       <li>React com styled components não é desculpa para falta de media queries.</li>
       <li>O pessoal precisa ser heavy user de internet: as soluções de usabilidade para o formulário, quando aplicadas, foram bem abaixo do que o mercado está acostumado.</li>
     </ul>
+    <div class="divider"></div>
     <h2>Avaliação Específica</h2>
     <p>Para este documento ficar completo, vamos levantar ponto-a-ponto as notas de todas as avaliações.</p>
-    <Grade consumed="{10}" total="{16}" width="{100}"  />
+    <h3>Legibilidade do Código:</h3>
+    <p>A Legibilidade do código é referente à qualidade da leitura do código. Este critério é subjetivo, isto é, baseia-se na minha capacidade de entender o código, e se ele segue critérios sólidos de tabeamentos e se o HTML não apresenta inconsistências. Foi um critério que o povo foi muito bem obrigado.</p>
+    <figure>
+      <Grade width="{150}" consumed="{9.52}" total="{10}" />
+      <figcaption>Uma média bem alta, mostrando que os(as) desenvolvedores (as) tomaram cuidado com a "caligrafia" do código.</figcaption>
+    </figure>
+    <h4>Futuro deste descritor:</h4>
+    <p>Será mergido com o descritor "Consistência das nomenclaturas"</p>
+    <div class="divider"></div>
+    <h3>Consistência nas nomenclaturas</h3>
+    <p>Este descritor mede se os(as) desenvolvedores(as) foram consistentes com a nomenclatura de classes, IDs e funções em seus códigos.</p>
+    <figure>
+      <Grade width="{150}" consumed="{9.3}" total="{10}" />
+      <figcaption>As notas foram ótimas, sinal de que as video-aulas que o povo faz sobre arquitetura limpa surge efeito indiretamente com os júniores. É um palpite que precisa de maior confirmação.</figcaption>
+    </figure>
+    <h4>Futuro do descritor:</h4>
+    <p>Possivelmente será mergido com o descritor de "legibilidade do código"</p>
+    <div class="divider"></div>
+    <h3>Concisão do código</h3>
+    <p>Verifica se o(a) desenvolvedor(a) inseriu código desnecessário para fazer o projeto.</p>
+    <figure>
+      <Grade width="{150}" consumed="{9.75}" total="{10}" />
+      <figcaption>As notas foram ótimas, mas talvez por que o projeto é simples demais.</figcaption>
+    </figure>
+    <h4>Futuro do descritor:</h4>
+    <p>Não faz sentido ele ser avaliado em projetos pequenos. Em projetos enormes faz sentido a re-existência deste descritor.</p>
+    <div class="divider"></div>
+    <h3>Se é fiel à proposta estabelecida</h3>
+    <p>Creio que é o descritor mais importante que devemos manter no futuro, visto que estar atento à complexidade das tarefas e atender as expectativas dos stackholders é o futuro do profissional.</p>
+    <figure>
+      <Grade width="{150}" consumed="{7.26}" total="{10}" />
+      <figcaption>Esta nota é enganosa, visto que 7.26 dá a entender que a coletividade entendeu a tarefa de cabo a rabo em 72%, dando 28% de refação, que é uma taxa muito alta. Nos próximos desafios, esta nota precisa ser maior.</figcaption>
+    </figure>
+    <h4>Futuro do descritor:</h4>
+    <p>Ele é tão precioso que ele deve ter comportamento especial no próximo desafio.</p>
+    <div class="divider"></div>
+    <h3>Se é perfeitamente responsivo</h3>
+    <p>Propositalmente, este projeto não foi feito com telas responsivas, pois é uma prática comum em agências de desenvolvimento e em algumas empresas.</p>
+    <figure>
+      <Grade width="{150}" consumed="{6.39}" total="{10}" />
+      <figcaption>Fundamental o estudo de media query e de testes em telas menores para que este resultado seja coletivamente melhor.</figcaption>
+    </figure>
+    <h4>Futuro do descritor:</h4>
+    <p>Ele é tão precioso que ele deve ter comportamento especial no próximo desafio.</p>
+    <div class="divider"></div>
+    <h3>Se é rápido o suficiente</h3>
+    <p>Se o(a) desenvolvedor(a) tomou cuidado em deixar o projeto bem rápido.</p>
+    <figure>
+      <Grade width="{150}" consumed="{8.91}" total="{10}" />
+      <figcaption>Está boa a nota, mas podemos sempre melhorar.</figcaption>
+    </figure>
+    <h4>Futuro do descritor:</h4>
+    <p>Ele tem seu valor, mas creio que será mergido com o teste do web.dev.</p>
+    <div class="divider"></div>
+    <h3>Se os links externos das redes sociais estão apontando para uma nova aba</h3>
+    <p>Ele não é bem um descritor, e sim uma necessidade básica do projeto. A nota 10 era dada para caso o(a) desenvolvedor(a) inseria <code>target="_blank"</code> no projeto. Na próxima versão, será exigido também <code>rel="noopener noreferrer"</code></p>
+    <figure>
+      <Grade width="{150}" consumed="{5.13}" total="{10}" />
+      <figcaption>É assustador que a tarefa obrigatória mais simples teve uma nota tão baixa. Considero bem preocupante que detalhes preciosos demais fiquem de lado.</figcaption>
+    </figure>
+    <h4>Futuro do descritor:</h4>
+    <p>Imaginei de início que ele seria mergido em algum lugar, mas com uma nota tão baixa, ele será fixo.</p>
+    <div class="divider"></div>
+    <h3>Se o botão laranja da dobra faz o movimento de scroll para o formulário</h3>
+    <p>Esta tarefa não teria o peso de um descritor de qualidade de código, porém era uma demanda do projeto que deve ter peso menor em futuros desafios.</p>
+    <figure>
+      <Grade width="{150}" consumed="{5.65}" total="{10}" />
+      <figcaption>Esta tarefa deve ser relegada a uma tarefa opcional no futuro.</figcaption>
+    </figure>
+    <h4>Futuro do descritor:</h4>
+    <p>Terá peso de tarefa optativa no futuro.</p>
+    <div class="divider"></div>
+    <h3>Aplicou hovers</h3>
+    <p>Esta tarefa é fundamental para projetos em front-end, e creio que num próximo desafio, teremos que definir a guia de estilo para ver se há maior fidelidade à propostas do designer.</p>
+    <figure>
+      <Grade width="{150}" consumed="{7.65}" total="{10}" />
+      <figcaption>Esta nota precisa ser maior no futuro, nem que o(a) desenvolvedor(a) opte por usar versões próximas de cores e efeitos.</figcaption>
+    </figure>
+    <h4>Futuro do descritor:</h4>
+    <p>Será mantido onde está.</p>
+    <div class="divider"></div>
+    <h3>Se as imagens estão nas extensões corretas e recomendadas</h3>
+    <p>Os(As) desenvolvedores(as) precisam ter maior conhecimento dos tipos de imagens. Numa próxima versão, o 10 só será aplicado caso o desenvolvedor utilize formatos novos como webp e avif usando a tag picture. Se utilizar PNG em imagens com fundo transparente e jpg em fotos, irá receber 8.</p>
+    <figure>
+      <Grade width="{150}" consumed="{8.13}" total="{10}" />
+      <figcaption>É uma nota boa, mas que pode subir para 9 com facilidade.</figcaption>
+    </figure>
+    <h4>Futuro do descritor:</h4>
+    <p>Será mantido onde está.</p>
+    <div class="divider"></div>
+    <h3>Se utilizou as fontes corretas, nos tamanhos e cores recomendadas pelo designer</h3>
+    <p>Este descritor é para capturar quem é pixel-perfect. Desenvolvedores(as) que tem bastante precisão em larguras, tamanhos de fontes, tamanhos de linha, margens, preenchimentos tem valor em agências e em equipes de marketing.</p>
+    <figure>
+      <Grade width="{150}" consumed="{7.87}" total="{10}" />
+      <figcaption>Precisão é um diferencial importante demais para ser escanteado. Esta nota precisa subir urgente.</figcaption>
+    </figure>
+    <h4>Futuro do descritor:</h4>
+    <p>Deve ser mergido com fidelidade ao design proposto.</p>
+    <div class="divider"></div>
+    <h2>Descritores opcionais e "Agradar ao patrão"</h2>
+    <p>Como eram tarefas opcionais, nem todos os desenvolvedores fizeram todos os tópicos, tanto que alguns foram além ao que era sugerido pelo briefing. Para facilitar a leitura, vamos listar numa tabela todos os resultados e o futuro de cada descritor.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Descritor</th>
+          <th>Quantos fizeram</th>
+          <th>Média</th>
+          <th>Futuro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Se há animações, e se elas são agradáveis ao olhar.</td>
+          <td>11</td>
+          <td>9.55</td>
+          <td>Continuará sendo um descritor opcional.</td>
+        </tr>
+        <tr>
+          <td>Se a máscara no input de telefone foi correta, impedindo a inclusão de letras e formatando um número</td>
+          <td>11</td>
+          <td>8.4</td>
+          <td>Continuará sendo um descritor opcional, talvez com peso de agradar o chefe.</td>
+        </tr>
+        <tr>
+          <td>Se a requisição para o servidor apontar para o Método Post</td>
+          <td>8</td>
+          <td>10</td>
+          <td>Ele será mergido com o descritor obrigatório de cunho amplo.</td>
+        </tr>
+        <tr>
+          <td>Se o formulário funcionar, se o usuário terá os feedbacks necessários</td>
+          <td>13</td>
+          <td>7.42</td>
+          <td>Continuará sendo um descritor opcional, talvez com peso de agradar o chefe.</td>
+        </tr>
+        <tr>
+          <td>Se o HTML está semântico</td>
+          <td>23</td>
+          <td>8.82</td>
+          <td>Será mergido com um descritor obrigatório.</td>
+        </tr>
+        <tr>
+          <td>Se a área da dobra for uma imagem e uma div por cima</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Se o hover utilizado tem transition de css</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Se as imagens possuem os atributos corretos</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Pontuação no web.dev</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Se criou em css puro, criou variáveis internas. Se usou algum pré-processador, criou variáveis e mixins</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Usou algum framework</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Há feedback visual após a requisição</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Boas idéias de reutilização do código</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Textos alternativos que respeitam pessoas de baixa visão, empoderando o usuário e não dando julgamento de valor</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Usou vite</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Usou CSS-Clip para fazer a imagem de triangulo</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>README bem escrito</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Versão em inglês</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Dark Mode</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </main>
 
 <style lang="stylus">
+  color = rgba(0,0,0,.1)
+  color2 = rgba(0,0,0,.06)
   .container
     max-width 1200px
     width calc(100% - 30px)
@@ -181,4 +412,29 @@
       text-align left
       &.pontuation
         width 140px
+  figure
+    margin 30px auto
+    width 100%
+    margin-bottom 30px
+    figcaption
+      text-align center
+      font-size 14px
+      margin-top 20px
+  h4
+    margin 0
+  .divider
+    margin 30px 0
+    height: 20px
+    position: relative
+    width: 100%
+    background: radial-gradient(ellipse farthest-side at top center, color, transparent)
+    &:before
+      content: ""
+      display: block
+      position: absolute
+      top: 0px
+      right: 0
+      left: 0
+      height: 3px
+      background: linear-gradient(left, transparent, color2, color2, transparent)
 </style>

@@ -5,14 +5,17 @@
   export let width: number
 
   const pct = (number: number) :number => number * 100 / total
+  const balance: number = total - consumed
 
-  onMount ( async() => {
-    console.log(consumed, total, width)
-    console.log(pct(consumed))
-  })
+  let rootElement: HTMLElement
+
+  $: rootElement && rootElement.style.setProperty('--width', `${width}px`)
+  $: rootElement && rootElement.style.setProperty('--balance', `${pct(balance)}%`)
+  $: rootElement && rootElement.style.setProperty('--consumed', `${pct(consumed)}%`)
+
 </script>
 
-<div class="chart">
+<div class="chart" bind:this="{rootElement}">
   <div class="chart-data">
     <div class="chart-data-center">
       <p>{ consumed }/{ total }</p>
@@ -22,15 +25,15 @@
 
 <style lang="stylus">
   .chart
-    margin: 0 auto 30px
+    margin: 0 auto
     width: var(--width)
     height: var(--width)
-    padding: 5px
+    padding: 8px
     border-radius: var(--width)
-    background: conic-gradient( #6D47DB var(--consumed), #F261FF var(--balance), #F261FF calc(var(--consumed) + var(--balance)), #D5D5D5 calc(var(--consumed) + var(--balance)))
+    background: conic-gradient( #079992 var(--consumed), #ff4757 var(--balance), #ff4757 calc(var(--consumed) + var(--balance)), #D5D5D5 calc(var(--consumed) + var(--balance)))
   .chart-data
-    width: calc(var(--width) - (5px * 2))
-    height: calc(var(--width) - (5px * 2))
+    width: calc(var(--width) - (8px * 2))
+    height: calc(var(--width) - (8px * 2))
     background: #fff
     border-radius: 100%
     position: relative
