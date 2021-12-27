@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Grade from "./Grade.svelte";
 	export let number: number= 1
 </script>
 
@@ -64,7 +65,7 @@
       </thead>
       <tbody>
         <tr>
-          <td>Descritores públicos obrigatórios</td>
+          <td>Descritores públicos obrigatórios (geram a nota de base)</td>
           <td>0 até 110 pontos</td>
         </tr>
         <tr>
@@ -126,7 +127,34 @@
         </tr>
       </tbody>
     </table>
-    <p>Com estas avaliações acima, as pessoas tendem a achar que o 10 é praticamente impossível, entretanto, a minha expectativa é que se algum dev atingir 255, ele tira nota 10.</p>
+    <p>Cada pessoa também recebeu uma avaliação da pessoa, em que estágio de desenvolvimento e maturidade está com seus códigos. Este esforço de oferecer uma avaliação mais subjetiva ajuda a confortar desenvolvedores(as) para entenderem que eles estão num processo constante de melhoramento.</p>
+    <h2>Avaliação Geral Global</h2>
+    <p>Nosso intuito com a avaliação global é ofertar para quem fez este teste uma visão global do que precisa melhorar, como uma guia de estudos obtidos pela análise dos códigos. Estas estatísticas que conseguimos coletar tem valor muito especial para mentores do Pessoas de Tech em entenderem como estão as pessoas estão entregando seus desafios.</p>
+    <p>Para sintetizar, listamos abaixo, em termos gerais, os principais pontos positivos e negativos das entregas dos desafios.</p>
+    <h3>Pontos positivos</h3>
+    <ul>
+      <li>Os HTMLs tem vindo semanticamente eficientes</li>
+      <li>Nenhum desafio teve nota menor que 90 - mostrando que pessoas bem iniciantes tem tentado ir além do que sabem.</li>
+      <li>As pessoas gostaram de ser avaliadas a fundo, sentindo falta deste padrão no mercado.</li>
+      <li>O desafio fez sentido com a experimentação de técnicas novas para desenvolvedres(as) mais experientes.</li>
+    </ul>
+    <h3>Pontos preocupantes</h3>
+    <ul>
+      <li>Falta de fidelidade com o design proposto.</li>
+      <li>CSS não está sendo levado a sério como poderia.</li>
+      <li>Os cursos que o pessoal tem aprendido tem parado no tempo.</li>
+      <li>Poucos arriscaram para além do desafio proposto. O mercado ainda avalia positivamente quem vai além.</li>
+    </ul>
+    <h3>Pontos negativos</h3>
+    <ul>
+      <li>Flagrante falta de testes em telas responsivas.</li>
+      <li>Testes viciados: o desenvolvedor não valida se as coisas quebram em telas menores que a tela cheia.</li>
+      <li>React com styled components não é desculpa para falta de media queries.</li>
+      <li>O pessoal precisa ser heavy user de internet: as soluções de usabilidade para o formulário, quando aplicadas, foram bem abaixo do que o mercado está acostumado.</li>
+    </ul>
+    <h2>Avaliação Específica</h2>
+    <p>Para este documento ficar completo, vamos levantar ponto-a-ponto as notas de todas as avaliações.</p>
+    <Grade consumed="{10}" total="{16}" width="{100}"  />
   </div>
 </main>
 
