@@ -8,9 +8,12 @@
 
   let rootElement: HTMLElement
 
-  rootElement && rootElement.style.setProperty('--width', `${width}px`)
-  rootElement && rootElement.style.setProperty('--balance', `${pct(balance)}%`)
-  rootElement && rootElement.style.setProperty('--consumed', `${pct(consumed)}%`)
+  // eslint-disable-next-line no-unused-labels
+  $: rootElement && rootElement.style.setProperty('--width', `${width}px`)
+  // eslint-disable-next-line no-unused-labels
+  $: rootElement && rootElement.style.setProperty('--balance', `${pct(balance)}%`)
+  // eslint-disable-next-line no-unused-labels
+  $: rootElement && rootElement.style.setProperty('--consumed', `${pct(consumed)}%`)
 
 </script>
 
