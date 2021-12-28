@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { onMount } from 'svelte'
 	export let consumed: number
   export let total: number
   export let width: number
@@ -9,9 +8,9 @@
 
   let rootElement: HTMLElement
 
-  $: rootElement && rootElement.style.setProperty('--width', `${width}px`)
-  $: rootElement && rootElement.style.setProperty('--balance', `${pct(balance)}%`)
-  $: rootElement && rootElement.style.setProperty('--consumed', `${pct(consumed)}%`)
+  rootElement && rootElement.style.setProperty('--width', `${width}px`)
+  rootElement && rootElement.style.setProperty('--balance', `${pct(balance)}%`)
+  rootElement && rootElement.style.setProperty('--consumed', `${pct(consumed)}%`)
 
 </script>
 

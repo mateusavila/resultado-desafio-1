@@ -414,6 +414,7 @@
       <li><strong>Definir melhor as notas:</strong> São 24 correções, e há risco de que algumas notas para algumas pessoas foram abaixo do que outras. Corrigir distorções é prioritário para melhorar a qualidade das correções.</li>
       <li><strong>Automatizar os formulários de correções:</strong> Preencher documentos do Google na mão dá bastante trabalho. Creio que eu vá criar uma versão dentro do WP com os critérios avaliativos usando ACF ou alguma outra plataforma.</li>
       <li><strong>Criar modelo de avaliação bem sólido que consiga ser replicável:</strong> Ter 2 ou 3 pessoas para avaliar junto comigo será algo bem legal. Quero que o próximo desafio tenha mais gente participando.</li>
+      <li><strong>Validar como faz uso do git: </strong>Verificar como que sobe os commits. <em>Sugestão de Darlan Tódero.</em></li>
     </ul>
   </div>
 </main>
