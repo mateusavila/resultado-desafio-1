@@ -3,6 +3,13 @@
 	export let number: number= 1
 </script>
 
+<svelte:head>
+	<html lang="pt-br" />
+  <title>Resultados obtidos do desafio 1</title>
+  <meta name="description" content="Estes são os resultados obtidos no nosso primeiro desafio de Front End do Pessoas de Tech.">
+  <meta name="title" content="Resultados obtidos do desafio 1">
+</svelte:head>
+
 <header>
   <div class="container">
     <h1>Resultados obtidos do desafio {number}</h1>
@@ -57,77 +64,82 @@
     <div class="divider"></div>
     <h2>Como calculamos a nota final?</h2>
     <p>Calculamos as notas de 0 a 10, sendo 0 que não atendeu em absoluto o descritor e 10 com atendimento total e/ou superou a expectativa do avaliador. Veja a tabela abaixo:</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Tipo de descritor</th>
-          <th>Total de pontos</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Descritores públicos obrigatórios (geram a nota de base)</td>
-          <td>0 até 110 pontos</td>
-        </tr>
-        <tr>
-          <td>Descritores públicos opcionais</td>
-          <td>Incrementa a nota de base de 0 a 80 pontos.</td>
-        </tr>
-        <tr>
-          <td>Agradando o patrão</td>
-          <td>Incrementa a nota de base de 0 a 110 pontos.</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td>Total</td>
-          <th>Conceito de 0 a 300 pontos</th>
-        </tr>
-      </tfoot>
-    </table>
+    <div class="main-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Tipo de descritor</th>
+            <th>Total de pontos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Descritores públicos obrigatórios (geram a nota de base)</td>
+            <td>0 até 110 pontos</td>
+          </tr>
+          <tr>
+            <td>Descritores públicos opcionais</td>
+            <td>Incrementa a nota de base de 0 a 80 pontos.</td>
+          </tr>
+          <tr>
+            <td>Agradando o patrão</td>
+            <td>Incrementa a nota de base de 0 a 110 pontos.</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <th>Conceito de 0 a 300 pontos</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
     <p>A partir desta tabela, compilamos uma tabela comparativa de resultados com a expectativa de como o profissional está para assumir uma vaga de júnior:</p>
-    <table>
-      <thead>
-        <tr>
-          <th class="pontuation">Pontuação</th>
-          <th>Descritivo</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>De 0 a 80</td>
-          <td>Você está iniciando os estudos em front-end. Parabéns! Há um caminho longo pela frente, e te convido a continuar estudando e treinando em nossos desafios.</td>
-        </tr>
-        <tr>
-          <td>De 81 a 110</td>
-          <td>Você já tem 6 meses de estudo. Continue firme e forte. Há algum curso oferecendo formação gratuita para você? Se candidate, pode ser que você consiga uma vaga.</td>
-        </tr>
-        <tr>
-          <td>De 111 a 180</td>
-          <td>Alguma empresa grande já enxergará em você o suficiente para ser estagiário. Creio que você irá assistir muito dev programando e/ou participará de muito pair programming.</td>
-        </tr>
-        <tr>
-          <td>De 181 a 199</td>
-          <td>Você já pode ser um dev júnior numa empresa de médio porte, sem responsabilidade direta por tarefas. Falta pouco para você conseguir seu primeiro emprego.</td>
-        </tr>
-        <tr>
-          <td>De 200 a 240</td>
-          <td>Você tem condição de ser um dev júnior em qualquer empresa, com responsabilidade direta de tarefas. Já consegue flutuar por inúmeros frameworks, pois sua base é bem sólida.</td>
-        </tr>
-        <tr>
-          <td>De 241 a 269</td>
-          <td>Não sei por que você está desempregado. Eu preciso achar uma oportunidade para ti.</td>
-        </tr>
-        <tr>
-          <td>De 270 a 290</td>
-          <td>Você tem o suficiente para ser um pleno em alguma empresa pequena ou média.</td>
-        </tr>
-        <tr>
-          <td>De 291 a 300</td>
-          <td>Você pode me ajudar nestas avaliações aqui. Confio em absoluto em você. Imagino que beliscaria uma vaga de sênior em empresa pequena.</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="main-table">
+      <table>
+        <thead>
+          <tr>
+            <th class="pontuation">Pontuação</th>
+            <th>Descritivo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>De 0 a 80</td>
+            <td>Você está iniciando os estudos em front-end. Parabéns! Há um caminho longo pela frente, e te convido a continuar estudando e treinando em nossos desafios.</td>
+          </tr>
+          <tr>
+            <td>De 81 a 110</td>
+            <td>Você já tem 6 meses de estudo. Continue firme e forte. Há algum curso oferecendo formação gratuita para você? Se candidate, pode ser que você consiga uma vaga.</td>
+          </tr>
+          <tr>
+            <td>De 111 a 180</td>
+            <td>Alguma empresa grande já enxergará em você o suficiente para ser estagiário. Creio que você irá assistir muito dev programando e/ou participará de muito pair programming.</td>
+          </tr>
+          <tr>
+            <td>De 181 a 199</td>
+            <td>Você já pode ser um dev júnior numa empresa de médio porte, sem responsabilidade direta por tarefas. Falta pouco para você conseguir seu primeiro emprego.</td>
+          </tr>
+          <tr>
+            <td>De 200 a 240</td>
+            <td>Você tem condição de ser um dev júnior em qualquer empresa, com responsabilidade direta de tarefas. Já consegue flutuar por inúmeros frameworks, pois sua base é bem sólida.</td>
+          </tr>
+          <tr>
+            <td>De 241 a 269</td>
+            <td>Não sei por que você está desempregado. Eu preciso achar uma oportunidade para ti.</td>
+          </tr>
+          <tr>
+            <td>De 270 a 290</td>
+            <td>Você tem o suficiente para ser um pleno em alguma empresa pequena ou média.</td>
+          </tr>
+          <tr>
+            <td>De 291 a 300</td>
+            <td>Você pode me ajudar nestas avaliações aqui. Confio em absoluto em você. Imagino que beliscaria uma vaga de sênior em empresa pequena.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
     <p>Cada pessoa também recebeu uma avaliação da pessoa, em que estágio de desenvolvimento e maturidade está com seus códigos. Este esforço de oferecer uma avaliação mais subjetiva ajuda a confortar desenvolvedores(as) para entenderem que eles estão num processo constante de melhoramento.</p>
     <div class="divider"></div>
     <h2>Avaliação Geral Global</h2>
@@ -258,134 +270,158 @@
     <div class="divider"></div>
     <h2>Descritores opcionais e "Agradar ao patrão"</h2>
     <p>Como eram tarefas opcionais, nem todos os desenvolvedores fizeram todos os tópicos, tanto que alguns foram além ao que era sugerido pelo briefing. Para facilitar a leitura, vamos listar numa tabela todos os resultados e o futuro de cada descritor.</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Descritor</th>
-          <th>Quantos fizeram</th>
-          <th>Média</th>
-          <th>Futuro</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Se há animações, e se elas são agradáveis ao olhar.</td>
-          <td>11</td>
-          <td>9.55</td>
-          <td>Continuará sendo um descritor opcional.</td>
-        </tr>
-        <tr>
-          <td>Se a máscara no input de telefone foi correta, impedindo a inclusão de letras e formatando um número</td>
-          <td>11</td>
-          <td>8.4</td>
-          <td>Continuará sendo um descritor opcional, talvez com peso de agradar o chefe.</td>
-        </tr>
-        <tr>
-          <td>Se a requisição para o servidor apontar para o Método Post</td>
-          <td>8</td>
-          <td>10</td>
-          <td>Ele será mergido com o descritor obrigatório de cunho amplo.</td>
-        </tr>
-        <tr>
-          <td>Se o formulário funcionar, se o usuário terá os feedbacks necessários</td>
-          <td>13</td>
-          <td>7.42</td>
-          <td>Continuará sendo um descritor opcional, talvez com peso de agradar o chefe.</td>
-        </tr>
-        <tr>
-          <td>Se o HTML está semântico</td>
-          <td>23</td>
-          <td>8.82</td>
-          <td>Será mergido com um descritor obrigatório.</td>
-        </tr>
-        <tr>
-          <td>Se a área da dobra for uma imagem e uma div por cima</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Se o hover utilizado tem transition de css</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Se as imagens possuem os atributos corretos</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Pontuação no web.dev</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Se criou em css puro, criou variáveis internas. Se usou algum pré-processador, criou variáveis e mixins</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Usou algum framework</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Há feedback visual após a requisição</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Boas idéias de reutilização do código</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Textos alternativos que respeitam pessoas de baixa visão, empoderando o usuário e não dando julgamento de valor</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Usou vite</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Usou CSS-Clip para fazer a imagem de triangulo</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>README bem escrito</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Versão em inglês</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Dark Mode</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="main-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Descritor</th>
+            <th>Quantos fizeram</th>
+            <th>Média</th>
+            <th>Futuro</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Se há animações, e se elas são agradáveis ao olhar.</td>
+            <td>11</td>
+            <td>9.55</td>
+            <td>Continuará sendo um descritor opcional.</td>
+          </tr>
+          <tr>
+            <td>Se a máscara no input de telefone foi correta, impedindo a inclusão de letras e formatando um número</td>
+            <td>11</td>
+            <td>8.40</td>
+            <td>Continuará sendo um descritor opcional, talvez com peso de agradar o chefe.</td>
+          </tr>
+          <tr>
+            <td>Se a requisição para o servidor apontar para o Método Post</td>
+            <td>8</td>
+            <td>10.00</td>
+            <td>Ele será mergido com o descritor obrigatório de cunho amplo.</td>
+          </tr>
+          <tr>
+            <td>Se o formulário funcionar, se o usuário terá os feedbacks necessários</td>
+            <td>13</td>
+            <td>7.42</td>
+            <td>Continuará sendo um descritor opcional, talvez com peso de agradar o chefe.</td>
+          </tr>
+          <tr>
+            <td>Se o HTML está semântico</td>
+            <td>23</td>
+            <td>8.82</td>
+            <td>Será mergido com um descritor obrigatório.</td>
+          </tr>
+          <tr>
+            <td>Se a área da dobra for uma imagem e uma div por cima</td>
+            <td>23</td>
+            <td>8.82</td>
+            <td>Deve virar um descritor "Agradando o Patrão"</td>
+          </tr>
+          <tr>
+            <td>Se o hover utilizado tem transition de css</td>
+            <td>20</td>
+            <td>8.05</td>
+            <td>Deve continuar como descritor opcional.</td>
+          </tr>
+          <tr>
+            <td>Se as imagens possuem os atributos corretos</td>
+            <td>11</td>
+            <td>5.30</td>
+            <td>Virará descritor obrigatório, devido a influência nas métricas do web.dev.</td>
+          </tr>
+          <tr>
+            <td>Pontuação no web.dev</td>
+            <td>24</td>
+            <td>7.24</td>
+            <td>Será um descritor obrigatório. Neste desafio, ele era calculado pelo valor da dezena da performance desde que os outros descritores forem acima de 90. No próximo desafio, será média aritmética dividido por 40.</td>
+          </tr>
+          <tr>
+            <td>Se criou em css puro, criou variáveis internas. Se usou algum pré-processador, criou variáveis e mixins</td>
+            <td>15</td>
+            <td>8.43</td>
+            <td>Continuará como descritor optativo.</td>
+          </tr>
+          <tr>
+            <td>Usou algum framework</td>
+            <td>15</td>
+            <td>9.29</td>
+            <td>Ele precisará ser reconfigurado, pois premiou só pelo uso, mesmo que limitado, de um framework. Creio que optaremos por alguma forma de compensação de quem se desafiou com alguma ferramenta nova.</td>
+          </tr>
+          <tr>
+            <td>Há feedback visual após a requisição</td>
+            <td>8</td>
+            <td>9.29</td>
+            <td>Ele precisa ser reconfigurado, pois premiou qualquer tipo de tela após o request. Por ser um descritor subjetivo, ele tenha que ser repensado para multiplos cenários para uma boa metrificação.</td>
+          </tr>
+          <tr>
+            <td>Boas idéias de reutilização do código</td>
+            <td>12</td>
+            <td>7.82</td>
+            <td>Deve continuar como descritor optativo.</td>
+          </tr>
+          <tr>
+            <td>Textos alternativos que respeitam pessoas de baixa visão, empoderando o usuário e não dando julgamento de valor</td>
+            <td>9</td>
+            <td>6.00</td>
+            <td>Será obrigatório, pois acessibilidade básica é um direito para pessoas com baixa visão ou cegas.</td>
+          </tr>
+          <tr>
+            <td>Usou vite</td>
+            <td>5</td>
+            <td>10.00</td>
+            <td>No próximo desafio, será expandido para gulp, webpack, rollup e parcel. No primeiro desafio, gostaria de desafiar alguns devs a buscarem algum tooling em especial para suas tarefas.</td>
+          </tr>
+          <tr>
+            <td>Usou CSS-Clip para fazer a imagem de triangulo</td>
+            <td>17</td>
+            <td>8.38</td>
+            <td>Este descritor terá que ser mais exigente, pois tem que respeitar a angulação do polígono e se ele utiliza a técnica de css clip. Mas com peso de descritor opcional.</td>
+          </tr>
+          <tr>
+            <td>README bem escrito</td>
+            <td>14</td>
+            <td>10.00</td>
+            <td>Este descritor caiu muito bem como "Agradar o patrão", pois ele não era obrigatório no desafio, e senti a necessidade de premiar bons READMEs que foram criados.</td>
+          </tr>
+          <tr>
+            <td>Versão em inglês</td>
+            <td>2</td>
+            <td>10.00</td>
+            <td>Este descritor caiu muito bem como "Agradar o patrão", pois ele não era obrigatório no desafio, e senti a necessidade de premiar quem fez a versão inglês do site.</td>
+          </tr>
+          <tr>
+            <td>Dark Mode</td>
+            <td>2</td>
+            <td>10.00</td>
+            <td>Este descritor caiu muito bem como "Agradar o patrão", pois ele não era obrigatório no desafio, e senti a necessidade de premiar quem fez a versão dark-mode do site.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>Proposta de novos descritores.</h2>
+    <p>Este documento busca dar subsídios para desafios no futuro, para que a avaliação seja clara, objetiva e de maior qualidade. A partir desta rodada de avaliações do primeiro desafio, percebi que há espaço para novos descritores, a listar abaixo:</p>
+    <ol>
+      <li><strong>Está atualizado no hype?</strong> Este descritor pretende validar se o código do desenvolvedor consegue implementar novas features, dando suporte para versões antigas de browsers. Se ele está utilizando, por exemplo, ES6, AVIF ou datalist.</li>
+      <li><strong>Typescript de qualidade?</strong> Ele entraria como um descritor optativo, sendo que se houver muitos <code>:any</code> no código poderá perder pontos. </li>
+      <li><strong>Estrutura flexível? Grid?</strong> Se o css possui uma boa implementação de CSS Flex e Grid. Seria optativo.</li>
+      <li><strong>Melhor amigo do designer:</strong> Nota dada por um membro externo designer.</li>
+      <li><strong>Parça do backend:</strong> Nota dada por um membro externo backender.</li>
+      <li><strong>QAmarada!</strong> Nota dada por um membro externo especializado em QA.</li>
+    </ol>
+    <h2>Lições para o próximo desafio</h2>
+    <p>Se para o desenvolvedor fazer o desafio foi bem interessante, para mim, que fez a avaliação, foi uma experiência de aprendizado sensacional. Para otimizar os próximos processos avaliativos, algumas ideias que eu vou ter que fazer:</p>
+    <ul>
+      <li><strong>Definir melhor as notas:</strong> São 24 correções, e há risco de que algumas notas para algumas pessoas foram abaixo do que outras. Corrigir distorções é prioritário para melhorar a qualidade das correções.</li>
+      <li><strong>Automatizar os formulários de correções:</strong> Preencher documentos do Google na mão dá bastante trabalho. Creio que eu vá criar uma versão dentro do WP com os critérios avaliativos usando ACF ou alguma outra plataforma.</li>
+      <li><strong>Criar modelo de avaliação bem sólido que consiga ser replicável:</strong> Ter 2 ou 3 pessoas para avaliar junto comigo será algo bem legal. Quero que o próximo desafio tenha mais gente participando.</li>
+    </ul>
   </div>
 </main>
+<footer>
+  <div class="container">
+    <p>Este documento foi atualizado dia 27/12/2021, às 21:44.</p>
+  </div>
+</footer>
 
 <style lang="stylus">
   color = rgba(0,0,0,.1)
@@ -437,4 +473,18 @@
       left: 0
       height: 3px
       background: linear-gradient(left, transparent, color2, color2, transparent)
+  .main-table
+    overflow auto
+    width 100%
+    padding-bottom 20px
+    table
+      width 1200px
+  footer
+    background #404040
+    color #fff
+    padding 30px 0
+    margin-top 40px
+    p
+      margin 0
+      text-align center
 </style>
